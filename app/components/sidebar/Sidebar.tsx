@@ -1,7 +1,7 @@
 import React from 'react';
 import FollowCard from '../FollowCard/FollowCard';
 
-import { Home, Search, Bell, Mail, Clipboard, Bookmark, Users, Star, Briefcase, User, MoreHorizontal } from 'lucide-react';
+import { Home, Search, Bell, Mail, Bookmark, Users, Star, User, MoreHorizontal } from 'lucide-react';
 
 const sidebarItems = [
   { label: 'Home', icon: <Home size={26} /> },
