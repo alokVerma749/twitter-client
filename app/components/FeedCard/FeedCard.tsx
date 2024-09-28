@@ -1,12 +1,13 @@
-import React from 'react'
-import FollowCard from '../FollowCard/FollowCard'
 import Image from 'next/image'
+import FeedUserHeader from '../FeedUserHeader/FeedUserHeader'
+import FeedFooter from '../FeedFooter/FeedFooter'
 
 const FeedCard = () => {
   return (
-    <div>
-      <FollowCard />
-      <Image height={250} width={250} alt={'feed image'} src={'/'} />
+    <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <FeedUserHeader />
+      <Image src='https://picsum.photos/200/300' height={99} width={999} alt='feed image' className='rounded-xl h-[350px] w-[600px] mx-auto mt-1' />
+      <FeedFooter />
     </div>
   )
 }

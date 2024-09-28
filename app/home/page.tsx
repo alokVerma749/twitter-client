@@ -3,14 +3,21 @@ import SubscriptionCard from "../components/SubscriptionCard/SubscriptionCard";
 import CardContainer from "../components/CardContainer/CardContainer";
 import ListItem from "../components/ListItem/ListItem";
 import FollowCard from "../components/FollowCard/FollowCard";
+import FeedCard from "../components/FeedCard/FeedCard";
 
 export default function Home() {
   return (
     <div className="grid grid-cols-12 h-screen mx-24">
+      {/* Navigation Sidebar */}
       <div className="col-span-3 border-r border-gray-600 p-2"><SidebarNavigation /></div>
-      <div className="col-span-6 p-2">Feeds</div>
 
-      <div className="col-span-3 border border-gray-600 p-3 space-y-2">
+      {/* Feed column */}
+      <div className="col-span-6 p-2">
+        <FeedCard />
+      </div>
+
+      {/* Suggestion Column */}
+      <div className="col-span-3 border-gray-600 p-3 space-y-2">
         <CardContainer headingText="Subscribe To Primium"><SubscriptionCard /></CardContainer>
 
         <CardContainer headingText="What's Happening">

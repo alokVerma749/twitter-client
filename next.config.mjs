@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'alokverma.vercel.app',
       },
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+      },
     ],
   },
 };
