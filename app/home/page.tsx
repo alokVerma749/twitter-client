@@ -4,6 +4,7 @@ import CardContainer from "../components/CardContainer/CardContainer";
 import ListItem from "../components/ListItem/ListItem";
 import FollowCard from "../components/FollowCard/FollowCard";
 import FeedCard from "../components/FeedCard/FeedCard";
+import AuthCard from "../components/AuthCard/AuthCard";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
 
       {/* Suggestion Column */}
       <div className="col-span-3 border-gray-600 p-3 space-y-2">
+        <CardContainer headingText="New to Nest Feed?"><AuthCard /></CardContainer>
         <CardContainer headingText="Subscribe To Primium"><SubscriptionCard /></CardContainer>
 
         <CardContainer headingText="What's Happening">

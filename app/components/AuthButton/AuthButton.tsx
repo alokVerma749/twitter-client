@@ -1,10 +1,15 @@
-interface propType {
-  authProvider?: string
-}
+import { GoogleLogin } from '@react-oauth/google';
 
-const AuthButton = ({ authProvider = "Google" }: propType) => {
+const AuthButton = () => {
   return (
-    <button className='bg-[#1D9BF0] p-3 w-64 text-sm font-bold'>Login via {authProvider}</button>
+    <GoogleLogin
+      onSuccess={credentialResponse => {
+        console.log(credentialResponse);
+      }}
+      onError={() => {
+        console.log('Login Failed');
+      }}
+    />
   )
 }
 
